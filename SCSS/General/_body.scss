@@ -1,0 +1,21 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: $sm;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white-default;
+}
+
+* {
+    scroll-behavior: smooth;
+}

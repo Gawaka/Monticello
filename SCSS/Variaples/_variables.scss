@@ -1,0 +1,26 @@
+/******** Colors ********/ 
+$color-elements:        #2C4058;
+$black-default:         #000000;
+$white-default:         #ffffff;
+$gradient-bg:           linear-gradient(90deg, rgba(96,161,255, 0.9) 0%, rgba(126,89,254, 0.7) 100%);
+$gradient:              linear-gradient(90deg, rgba(96,161,255, 0.6) 0%, rgba(126,89,254, 100) 100%);
+$color-min:             #55B7FF;
+
+
+/******** Fonts ********/ 
+$font-primary:   'Montserrat', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+$font-third:     'Source Sans Pro', sans-serif;
+
+/******** Width ********/ 
+$max-width: 1600px;
+$min-width: 425px;
+
+/******** Breakpoints *********/
+$lg:     1600px;
+$lg-md:  1439px;
+$min-lg: 1023px;
+$min-md: 767px; 
+$md:     768px;
+$max-md: 769px;
+$sm:     425px;
