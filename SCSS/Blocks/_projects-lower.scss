@@ -36,7 +36,7 @@
         }
 
         @include media ($ultraHD) {
-            left: -10%;
+            margin-right: 10%;
         }
     }
 
@@ -44,7 +44,7 @@
         position: relative;
         width: 425px;
         height: 425px;
-        background: url(../../image/content/projects-bg-second.jpg);
+        background: url(./../image/content/projects-bg-second.jpg);
         margin: 0 auto;
 
         @include media ($md) {

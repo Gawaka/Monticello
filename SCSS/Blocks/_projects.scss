@@ -58,7 +58,7 @@
         position: relative;
         width: 425px;
         height: 425px;
-        background: url(../../image/content/projects-bg.jpg);
+        background: url(./../image/content/projects-bg.jpg);
         margin: 0 auto;
 
         @include media ($md) {
@@ -159,7 +159,7 @@
         }
 
         @include media ($ultraHD) {
-            margin-right: 25%;
+            margin-right: 20%;
         }
     }
 
