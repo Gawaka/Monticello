@@ -18,7 +18,12 @@
   right: 120px;
   display: flex;
   gap: 20px;
-  top: -55px;
+  top: -100%;
+}
+@media screen and (min-width: 767px) {
+  .header__socials {
+    top: -55px;
+  }
 }
 .header__socials-icon:hover {
   stroke: #ffffff;
@@ -83,16 +88,11 @@
 }
 .title__text {
   font-family: "Montserrat", sans-serif;
-  font-size: 80px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 98px;
   letter-spacing: 0.1em;
   text-align: center;
-}
-@media screen and (min-width: 425px) {
-  .title__text {
-    font-size: 30px;
-  }
 }
 @media screen and (min-width: 767px) {
   .title__text {
@@ -111,16 +111,11 @@
 }
 .title__description {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 11px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.3em;
   text-align: center;
-}
-@media screen and (min-width: 425px) {
-  .title__description {
-    font-size: 11px;
-  }
 }
 @media screen and (min-width: 767px) {
   .title__description {
@@ -295,6 +290,10 @@ main {
   height: 50px;
   top: 5px;
   right: 15px;
+}
+.nav__open:hover {
+  transform: scale(1.1) rotate(360deg);
+  transition: all 0.5s ease-in-out;
 }
 @media screen and (min-width: 769px) {
   .nav__open {
@@ -1226,12 +1225,14 @@ main {
   }
 }
 .form__phone {
+  background: none;
   width: 310px;
   height: 50px;
   border: none;
   border-bottom: 1px solid #2C4058;
 }
 .form__email {
+  background: none;
   width: 310px;
   height: 50px;
   border: none;
@@ -1242,6 +1243,11 @@ main {
 input:focus {
   outline: #55B7FF;
   box-shadow: 0 0 5px #7E5AFF;
+}
+
+input::placeholder {
+  color: #2C4058;
+  opacity: 0.3;
 }
 
 body {

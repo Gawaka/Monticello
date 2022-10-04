@@ -4,17 +4,21 @@
     background: no-repeat;
     background-size: cover;
     background-image: $gradient-bg,
-        url(./../image/content/header-bg.jpg);
-        background-position-x: 45%;
-        position: relative;
+    url(./../image/content/header-bg.jpg);
+    background-position-x: 45%;
+    position: relative;
 
         &__socials {
-        cursor: pointer;
-        position: absolute;
-        right: 120px;
-        display: flex;
-        gap: 20px;
-        top: -55px;
+            cursor: pointer;
+            position: absolute;
+            right: 120px;
+            display: flex;
+            gap: 20px;
+            top: -100%;
+
+            @include media ($min-md) {
+                top: -55px;
+            }
         }
 
         &__socials-icon:hover {
@@ -79,15 +83,12 @@
 
     &__text {
         font-family: $font-primary;
-        font-size: 80px;
+        font-size: 30px;
         font-weight: 700;
         line-height: 98px;
         letter-spacing: 0.1em;
         text-align: center;
 
-        @include media ($sm) {
-            font-size: 30px;
-        }
         
         @include media ($min-md) {
         font-size: 36px;
@@ -104,15 +105,11 @@
     
     &__description {
         font-family: $font-primary;
-        font-size: 18px;
+        font-size: 11px;
         font-weight: 400;
         line-height: 22px;
         letter-spacing: 0.3em;
         text-align: center;
-
-        @include media ($sm) {
-            font-size: 11px;
-        }
 
         @include media ($min-md) {
             font-size: 15px;
