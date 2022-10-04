@@ -3,7 +3,7 @@
     min-width: $sm;
     width: 100%;
     height: 700px;
-    background-image: url(../../image/content/Map.jpg);
+    background-image: url(./../image/content/Map.jpg);
     background-size: inherit;
 
     &__contacts {
@@ -58,7 +58,7 @@
     }
 
     &__contacts-card {
-        background-image: url(../../image/svg/mask-form.png);
+        background-image: url(./../image/svg/mask-form.png);
         background-position: bottom;
 
         @include media ($min-lg) {
