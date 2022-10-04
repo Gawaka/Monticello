@@ -16,3 +16,11 @@
         height: 50px;
     }
 }
+
+.btn:hover {
+	background: $gradient;
+    border: none;
+	color: $white-default;
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}

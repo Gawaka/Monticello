@@ -1,0 +1,134 @@
+.gallery {
+    width: 100%;
+    min-width: $sm;
+    height: auto;
+    margin: 0 auto;
+
+    &__title-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 110px;
+    }
+
+    &__title-head {
+        font-family: $font-primary;
+        font-size: 44px;
+        font-weight: 700;
+        color: $color-elements;
+        padding-bottom: 90px;
+
+    }
+
+    &__line {
+        padding-bottom: 30px;
+    }
+
+    &__title {
+        font-family: $font-primary;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 54px;
+        color: $color-elements;
+        padding-bottom: 10px;
+
+        @include media ($min-lg) {
+            padding-bottom: 70px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 0 5%;
+        padding-bottom: 60px;
+
+        @include media ($lg-md) {
+            max-width: 1170px;
+            display: grid;
+            text-align: center;
+            align-items: center;
+            grid-gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__box {
+        width: fit-content;
+    }
+
+    &__grid {
+        @include media ($min-lg) {
+            position: relative;
+            grid-column-start: 3;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+
+    &__img-first {
+        width: 260px;
+        height: 180px;
+
+        @include media ($md) {
+            width: 330px;
+            height: 250px;
+        }
+
+        @include media ($min-lg) {
+            width: 580px;
+            height: 440px;
+        }
+    }
+
+    &__img {
+        width: 260px;
+        height: 180px;
+
+        @include media ($md) {
+            width: 330px;
+            height: 250px;
+        }
+
+        @include media ($min-lg) {
+            width: 285px;
+            height: 215px;
+        }
+    }
+
+    &__img-first:hover {
+        cursor: zoom-in;
+        box-shadow: 0px 0px 5px 0px $color-min;
+        transform: scale(1.5);
+        transition: transform 0.9s ease-in-out;
+
+        @include media ($md) {
+            transform: scale(1.2);
+        }
+    }
+
+    &__img:hover {
+        cursor: zoom-in;
+        box-shadow: 0px 0px 5px 0px $color-min;
+        transform: scale(1.5);
+        transition: transform 0.9s ease-in-out;
+
+        @include media ($md) {
+            transform: scale(1.2);
+        }
+
+        @include media ($min-lg) {
+            transform: scale(1.8);
+        }
+    }
+}
+

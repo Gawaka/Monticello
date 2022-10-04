@@ -6,6 +6,23 @@
     background-image: $gradient-bg,
         url(../../image/content/header-bg.jpg);
         background-position-x: 45%;
+        position: relative;
+
+        &__socials {
+        cursor: pointer;
+        position: absolute;
+        right: 120px;
+        display: flex;
+        gap: 20px;
+        top: -55px;
+        }
+
+        &__socials-icon:hover {
+            stroke: $white-default;
+            transform: scale(1.2);
+            opacity: 2;
+            transition: all 0.5s ease;
+        }
 }
 
 .logo {
@@ -43,22 +60,22 @@
             height: 55px;
         }
     }
+
+    &__img:hover {
+        transform: scale(1.03);
+        transition: all 0.5s ease;
+        opacity: 0.7;
+    }
 }
 
 .title {
     margin: 0 auto;
-    width: 950px;
     height: 120px;
     padding-top: 225px;
     color: $white-default;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: $font-primary;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 98px;
-    letter-spacing: 0.1em;
 
     &__text {
         font-family: $font-primary;
@@ -66,6 +83,23 @@
         font-weight: 700;
         line-height: 98px;
         letter-spacing: 0.1em;
+        text-align: center;
+
+        @include media ($sm) {
+            font-size: 30px;
+        }
+        
+        @include media ($min-md) {
+        font-size: 36px;
+        }
+
+        @include media ($min-lg) {
+            font-size: 67px;
+        }
+
+        @include media ($lg-md) {
+            font-size: 80px;
+        }
     }
     
     &__description {
@@ -74,6 +108,23 @@
         font-weight: 400;
         line-height: 22px;
         letter-spacing: 0.3em;
+        text-align: center;
+
+        @include media ($sm) {
+            font-size: 11px;
+        }
+
+        @include media ($min-md) {
+            font-size: 15px;
+        }
+
+        @include media ($min-lg) {
+            font-size: 18px;
+        }
+
+        @include media ($lg-md) {
+            font-size: 22px;
+        }
     }
 }
 
@@ -86,8 +137,9 @@
     border: none;
 
     &__svg:hover {
-        transform: scale(1.2);
         cursor: pointer;
+        transition: all 0.5s ease;
+        transform: rotate(360deg) scale(1.2);
     }
 }
 

@@ -48,14 +48,32 @@
     &__menu-item {
         list-style: none;
         gap: 20px;
-    }
-
-    &__menu-item:hover, &__img:hover {
         cursor: pointer;
-        transform: scale(1.2);
-        fill: $white-default;
-
     }
+
+    &__menu-item::before {
+        content: "";
+        display: inline-block;
+        border-radius: 50px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid $white-default;
+        align-items: center;
+        margin-right: 15px;
+        margin-bottom: -1px;
+    }
+
+    &__menu-item:hover::before {
+        background-color: $white-default;
+        transition: all 0.5s ease;
+    }
+
+    &__menu-item:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+    }
+
+
 
     &__open {
         position: absolute;

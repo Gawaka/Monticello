@@ -1,0 +1,91 @@
+.map {
+    position: relative;
+    min-width: $sm;
+    width: 100%;
+    height: 700px;
+    background-image: url(../../image/content/Map.jpg);
+    background-size: inherit;
+
+    &__contacts {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 55%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 425px;
+        height: auto;
+        background-color: $white-default;
+
+        @include media ($min-lg) {
+            width: 770px;
+            height: 450px;
+        }
+    }
+
+    &__title-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 45px;
+    }
+
+    &__title-head {
+        font-family: $font-primary;
+        font-size: 44px;
+        font-weight: 700;
+        color: $color-elements;
+    }
+
+    &__line {
+        padding-bottom: 30px;
+    }
+
+    &__title {
+        font-family: $font-primary;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 54px;
+        color: $color-elements;
+        padding-bottom: 10px;
+
+        @include media ($min-lg) {
+            padding-bottom: 70px;
+        }
+    }
+
+    &__contacts-card {
+        background-image: url(../../image/svg/mask-form.png);
+        background-position: bottom;
+
+        @include media ($min-lg) {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+    }
+
+    &__info {
+        font-family: $font-primary;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 10px;
+    }
+
+    &__link {
+        color: $color-elements;
+    }
+
+    &__form-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}

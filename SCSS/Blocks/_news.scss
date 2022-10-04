@@ -1,12 +1,10 @@
 .news {
     background-image: url(../../image/content/news-bg.jpg);
-    // background: no-repeat;
     background-size: cover;
     width: 100%;
     min-width: $sm;
-    height: 100vh;
+    height: 980px;
     margin: 0 auto;
-    padding-bottom: 160px;
 
     &__title-box {
         display: flex;

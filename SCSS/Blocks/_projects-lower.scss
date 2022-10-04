@@ -34,6 +34,10 @@
             position: relative;
             left: 0;
         }
+
+        @include media ($ultraHD) {
+            left: -10%;
+        }
     }
 
     &__img-box {

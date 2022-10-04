@@ -83,6 +83,10 @@
             height: 470px;
             margin-left: 0%;
         }
+        
+        @include media ($ultraHD) {
+            margin-left: 10%;
+        }
         }
 
     &__img-content {
@@ -137,7 +141,6 @@
 
         @include media ($min-lg) {
             width: max-content;
-            // padding-left: 100px;
             padding-top: 10px;
         }
 
@@ -153,6 +156,10 @@
             padding-left: 100px;
             padding-top: 130px;
             margin-right: 15%;
+        }
+
+        @include media ($ultraHD) {
+            margin-right: 25%;
         }
     }
 
